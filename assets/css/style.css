@@ -28,7 +28,7 @@ h3 {
 }
 
 .hidden-heading {
-    display: none; 
+    display: none;
 }
 
 /* Header */
@@ -122,9 +122,9 @@ main {
 
     /* Reasons section */
     #reasons {
-            width: 90%;
-            margin: 20px auto;
-        }
+        width: 90%;
+        margin: 20px auto;
+    }
 
     #reasons h2 {
         margin-bottom: 20px;
@@ -164,31 +164,41 @@ main {
         justify-content: center;
     }
 
-        /* Meetup Times section */
-        #times {
-            background: url('../images/dublin-city.webp') no-repeat center/cover;
-            /* Handles responsivity without the need for a media query */
-            display: flex;
-            flex-wrap: wrap;
-        }
-    
-        #times div {
-            color: #fafafa;
-            background-color: rgba(0, 0, 0, .6);
-            padding: 15px;
-            text-align: center;
-            /* This will not wrap on screens of less than 400px wide.
+    /* Meetup Times section */
+    #times {
+        background: url('../images/dublin-city.webp') no-repeat center/cover;
+        /* Handles responsivity without the need for a media query */
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #times div {
+        color: #fafafa;
+        background-color: rgba(0, 0, 0, .6);
+        padding: 15px;
+        text-align: center;
+        /* This will not wrap on screens of less than 400px wide.
         Each div will expand to fill the available space on its row */
-            flex-basis: 200px;
-            flex-grow: 1;
-            /* Creates a grid of meetup time divs over the background image */
-            border: 2px solid white;
-        }
-    
-        #times h3 {
-            /* Override the heading colour set in general styles */
-            color: #fafafa;
-        }
+        flex-basis: 200px;
+        flex-grow: 1;
+        /* Creates a grid of meetup time divs over the background image */
+        border: 2px solid white;
+    }
+
+    #times h3 {
+        /* Override the heading colour set in general styles */
+        color: #fafafa;
+    }
+
+    /* Gallery page */
+    #photos img {
+        width: 100%;
+        line-height: 1em;
+    }
+
+    #photos {
+        line-height: 0;
+    }
 
     /* Footer */
     footer #social-networks {
@@ -255,8 +265,8 @@ main {
             width: 100%;
         }
 
-        #benefits-physical> div,
-        #benefits-mental> div {
+        #benefits-physical>div,
+        #benefits-mental>div {
             width: 75%;
         }
 
@@ -273,31 +283,31 @@ main {
         }
     }
 
-        @media screen and (min-width: 1200px) {
-    
-            /* Reasons section */
-            #benefits {
-                display: flex;
-                flex-direction: row;
-            }
-    
-            #benefits>div {
-                flex: 1;
-            }
-    
-            #benefits-image {
-                order: 0
-            }
-    
-            #benefits-mental {
-                order: 1;
-            }
-    
-            #benefits-mental>div {
-                align-self: flex-start;
-            }
-    
-            #benefits-physical>div {
-                align-self: flex-end;
-            }
+    @media screen and (min-width: 1200px) {
+
+        /* Reasons section */
+        #benefits {
+            display: flex;
+            flex-direction: row;
         }
+
+        #benefits>div {
+            flex: 1;
+        }
+
+        #benefits-image {
+            order: 0
+        }
+
+        #benefits-mental {
+            order: 1;
+        }
+
+        #benefits-mental>div {
+            align-self: flex-start;
+        }
+
+        #benefits-physical>div {
+            align-self: flex-end;
+        }
+    }
